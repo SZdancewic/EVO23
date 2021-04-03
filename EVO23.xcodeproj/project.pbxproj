@@ -8,14 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0E252EBA2610BA1800834135 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E252EB92610BA1800834135 /* AppDelegate.swift */; };
-		0E252EBC2610BA1900834135 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0E252EBB2610BA1900834135 /* GameScene.sks */; };
-		0E252EBE2610BA1900834135 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0E252EBD2610BA1900834135 /* Actions.sks */; };
-		0E252EC02610BA1900834135 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E252EBF2610BA1900834135 /* GameScene.swift */; };
 		0E252EC22610BA1900834135 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E252EC12610BA1900834135 /* ViewController.swift */; };
 		0E252EC42610BA1D00834135 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E252EC32610BA1D00834135 /* Assets.xcassets */; };
 		0E252EC72610BA1D00834135 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E252EC52610BA1D00834135 /* Main.storyboard */; };
 		0E252ED32610BA1E00834135 /* EVO23Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E252ED22610BA1E00834135 /* EVO23Tests.swift */; };
 		0E252EDE2610BA1E00834135 /* EVO23UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E252EDD2610BA1E00834135 /* EVO23UITests.swift */; };
+		98B1B6572617FBA700BB62BF /* EvoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B1B6562617FBA700BB62BF /* EvoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +36,6 @@
 /* Begin PBXFileReference section */
 		0E252EB62610BA1800834135 /* EVO23.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EVO23.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E252EB92610BA1800834135 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0E252EBB2610BA1900834135 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		0E252EBD2610BA1900834135 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
-		0E252EBF2610BA1900834135 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		0E252EC12610BA1900834135 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0E252EC32610BA1D00834135 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E252EC62610BA1D00834135 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,6 +47,7 @@
 		0E252ED92610BA1E00834135 /* EVO23UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EVO23UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E252EDD2610BA1E00834135 /* EVO23UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EVO23UITests.swift; sourceTree = "<group>"; };
 		0E252EDF2610BA1E00834135 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98B1B6562617FBA700BB62BF /* EvoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,10 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				0E252EB92610BA1800834135 /* AppDelegate.swift */,
-				0E252EBB2610BA1900834135 /* GameScene.sks */,
-				0E252EBD2610BA1900834135 /* Actions.sks */,
-				0E252EBF2610BA1900834135 /* GameScene.swift */,
 				0E252EC12610BA1900834135 /* ViewController.swift */,
+				98B1B6562617FBA700BB62BF /* EvoView.swift */,
 				0E252EC32610BA1D00834135 /* Assets.xcassets */,
 				0E252EC52610BA1D00834135 /* Main.storyboard */,
 				0E252EC82610BA1D00834135 /* Info.plist */,
@@ -236,9 +230,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E252EBC2610BA1900834135 /* GameScene.sks in Resources */,
 				0E252EC42610BA1D00834135 /* Assets.xcassets in Resources */,
-				0E252EBE2610BA1900834135 /* Actions.sks in Resources */,
 				0E252EC72610BA1D00834135 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,7 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E252EC22610BA1900834135 /* ViewController.swift in Sources */,
-				0E252EC02610BA1900834135 /* GameScene.swift in Sources */,
+				98B1B6572617FBA700BB62BF /* EvoView.swift in Sources */,
 				0E252EBA2610BA1800834135 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
